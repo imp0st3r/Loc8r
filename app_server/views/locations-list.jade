@@ -14,7 +14,7 @@ block content
             h4
               a(href="/location")= location.name
               small &nbsp;
-			    - for (var i = 1; i <= location.rating; i++)
+                - for (var i = 1; i <= location.rating; i++)
                   span.glyphicon.glyphicon-star
                 - for (var i = location.rating; i < 5;i++)
                   span.glyphicon.glyphicon-star-empty
