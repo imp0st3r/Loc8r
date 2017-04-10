@@ -55,7 +55,7 @@ block content
                     span.reviewAuthor #{review.author}
                     small.reviewTimestamp #{review.timestamp}
                   .col-cs-12
-                    p | #{(review.reviewText).replace(/\n/g, '<br/>')}
+                    p !{(review.reviewText).replace(/\n/g, '<br/>')}
     .col-xs-12.col-md-3
       p.lead #{location.name} #{sidebar.context}
       p= sidebar.callToAction
